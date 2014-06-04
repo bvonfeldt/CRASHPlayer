@@ -39,7 +39,7 @@ Specific instructions for CRASHPlayer are below:
     Login to the Yahoo TV App Upload Tool at https://gallery.tv.widgets.yahoo.com/publisher/
     On the Upload TV App tab, enter the data into the fields as follows: 
 
-        TV App (Widget) ID:  com.crashplayer.yctv.crashplayer
+        TV App (Widget) ID:  com.crashplayer.yctv.crashplayer  --needs to make this unique and reference it below
         TV App (Widget) Version:  1.0.11
         Author Name:  CRASHPlayer.com
         Author Company:  [blank]
@@ -55,8 +55,11 @@ Specific instructions for CRASHPlayer are below:
         Store Icon File:  appIcon.png
         Store Image File:  screenshot-ctvstore-540.png
         App Bookmark File:  bookmark_tile.png
-        App Bookmark720 File: bookmark_tile.png
+        App Bookmark720 File: bookmark_tile.png --needs a different file to pass upload ignore at this point
 
+    Open the widget archive file (7-Zip).  Navigate to CRASHPlayer.widget\Contents\.  Open "widget.xml".  
+    Search for "com.crashplayer.yctv.crashplayer" modify to the unique ID from above "TV App (Widget) ID: "
+    
     For the TV App (Widget) File, point it to the widget file you downloaded in the first step. 
 
     For the TV Platform, select the your TV Brand. 
